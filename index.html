@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment</title>
+
+    <style>
+        label {
+            width: 140px;
+            display: inline-block;
+            margin: 0.2cm;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input{
+            padding: 4px;
+            margin: 5px;
+            font-size: 16px;
+            border: 10px;
+            border: 1px solid black
+        }
+        legend{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- inputing the fieldset and legend -->
+    <fieldset>
+        <legend> Your Address</legend>
+        <form action="#" method="#"></form>
+    <!-- adding div as a block for each label tag -->
+    <!-- input type of text -->
+    <div>
+        <label for="firstname">Firstname</label>
+        <input type="text" id="firstname" required>
+    </div>
+
+    <div>
+        <label for="lastname">Lastname</label>
+        <input type="text" id="lastname" required>
+    </div>
+    
+    <div>
+        <label for="street">Street</label>
+        <input type="text" id="street" required>
+    </div>
+     
+    <div>
+        <label for="city">City</label>
+         <input type="text" id="city" required>
+    </div>
+    </fieldset>
+<!-- Second fieldset and legend -->
+    <fieldset>
+        <legend> Additional details</legend>
+        <!-- Text area -->
+        <div>
+            <label for="textarea">Biography</label>
+            <textarea name="Biography" id="textarea" cols="30" rows="3"></textarea>
+        </div>
+<!-- input type of file -->
+        <div>
+            <label for="file">Image</label>
+            <input type="file" id="file" placeholder="Choose file" required>
+        </div>
+<!-- input type of number  -->
+        <div>
+            <label for="Age">Age group</label>
+            <input type="number" name="Age" id="Age" min="0" max="9" placeholder="0 to 9 years" style= "width:90px;">
+        </div>
+    </fieldset>
+    <!-- Third fieldset and legend -->
+    <fieldset>
+        <legend>Interests</legend>
+<!-- select tag -->
+        <div>
+            <label for="hobbies">Hobbies</label>
+                <select name="hobbies" id="hobbies" size="4">
+                <option value="playing soccer">Playing soccer</option>
+                <option value="dancing">Dancing</option>
+                <option value="gardening">Gardening</option>
+                <option value="Watching movies">Watching movies</option>
+                </select>
+        </div>
+
+        <div>
+            <label for="car">Favourite car?</label>
+            <select name="car" id="car">
+            <option value="Volvo">Volvo</option>
+            <option value="Mercedes benz">Mercedes Benz</option>
+            <option value="BMW">BMW</option>
+            <option value="Honda">Honda</option>
+            <option value="toyota corolla">Toyota corolla</option>
+            <option value="Venza">Venza</option>
+            </select>
+        </div>
+<!-- Use of the opt group attribute -->
+        <div>
+            <label for="transport">Favourite public transport</label>
+                <select name="transport" id="transport" size="4">
+                    <optgroup label="Ground">
+                        <option value="train">Train</option>
+                        <option value="Bus">Bus</option>
+                    </optgroup>
+                    
+                    <optgroup label="Water">
+                        <option value="Sea">Sea</option>
+                        <option value="River">River</option>
+                    </optgroup>
+                    
+                    <optgroup label="Air">
+                    <option value="Aeroplane">Aeroplane</option>
+                    <option value="Helicopter">Helicopter</option>
+                    </optgroup>
+        </div>
+    </fieldset>
+
+    
+</body>
+</body>
+</html>
